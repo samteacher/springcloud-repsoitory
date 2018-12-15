@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>message</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <!--/*@thymesVar id="message" type="java.lang.String"*/-->
+    <div style="width:1200px;height:auto;margin:30px auto 0;" th:text="${message}">Red Chair</div>
+    <hr/>
+
+    <!--/*@thymesVar id="map" type="java.uitl.Map"*/-->
+    <span th:text="${map}"></span>
+    <!--/*@thymesVar id="list" type="java.uitl.List"*/-->
+    <span th:text="${list}"></span>
+    <hr>
+    <ul th:each="lists : ${list}">
+        <li th:text="*{lists}"></li>
+    </ul>
+    <hr>
+    <ul th:each="maps : ${map}">
+        <li th:text="${maps.value}"></li>
+    </ul>
+    <hr>
+    <a th:href="@{/index/content}" target="_blank">CONTENT</a><br/>
+    <a th:href="@{/index/content(id=${1},type=${1001})}" target="_blank">CONTENT</a>
+    <hr>
+    <a th:href="@{../index/content}" target="_blank">多层链接</a><br/>
+    <a th:href="@{~/product}" target="_blank">多层链接</a>
+    <hr>
+    <a th:href="@{//static.baidu.com}" target="_blank">百度</a><br/>
+    <a th:href="@{http://www.baidu.com}" target="_blank">百度</a>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+#######prodlog#############-----2018-10-13 10:33:37,586  INFO EurekaProfileApplication:50 - Starting EurekaProfileApplication on REZQ95V4IKYUG2N with PID 3848 (E:\ideawordspace\eureka-profile\target\classes started by Administrator in E:\ideawordspace\eureka-profile)
+#######prodlog#############-----2018-10-13 10:33:37,588 DEBUG EurekaProfileApplication:53 - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+#######prodlog#############-----2018-10-13 10:33:37,588  INFO EurekaProfileApplication:684 - The following profiles are active: prod
+#######prodlog#############-----2018-10-13 10:33:38,850  INFO EurekaProfileApplication:59 - Started EurekaProfileApplication in 1.682 seconds (JVM running for 2.199)

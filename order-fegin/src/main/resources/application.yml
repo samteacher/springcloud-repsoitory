@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8765
+  #设置线程数  Jemter压测 解决雪崩现象   如果不设置线程数不会出现效果
+  tomcat:
+    max-threads: 50
+spring:
+  application:
+    name: order-fegin
+
+#####  去掉以下部分可以实现没有降级前的效果
+#使用feign作为服务消费，feign中是否启用hystrix
+feign:
+  hystrix:
+    enabled: true
+#开启熔断 只要超过四秒时间它才会访问getToOrderMemberAll() -count:服务器异常  默认是1秒 降级处理
+hystrix:
+   command:
+     default:
+       execution:
+        isolation:
+         thread:
+          timeoutInMilliseconds: 4000  #这里配置的是四秒   因为member工程沉睡了3秒

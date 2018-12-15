@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sam.springmybatis.dao.UserMapper">
+
+
+    <select id="selectUser" resultType="User" parameterType="java.lang.String" >
+        SELECT
+            username,
+            age,
+            account,
+            address
+        FROM
+            USER
+        WHERE
+            job = #{job}
+    </select>
+
+    <select id="queryUserAll" resultType="User" >
+        SELECT
+            username,
+            age,
+            account,
+            address
+        FROM
+            USER
+    </select>
+</mapper>

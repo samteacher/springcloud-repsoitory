@@ -1,0 +1,30 @@
+#######prodlog#############-----2018-10-13 10:33:37,586  INFO EurekaProfileApplication:50 - Starting EurekaProfileApplication on REZQ95V4IKYUG2N with PID 3848 (E:\ideawordspace\eureka-profile\target\classes started by Administrator in E:\ideawordspace\eureka-profile)
+#######prodlog#############-----2018-10-13 10:33:37,588  INFO EurekaProfileApplication:684 - The following profiles are active: prod
+#######prodlog#############-----2018-10-13 10:33:37,620  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68e5eea7: startup date [Sat Oct 13 10:33:37 CST 2018]; root of context hierarchy
+#######prodlog#############-----2018-10-13 10:33:38,410  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8742 (http)
+#######prodlog#############-----2018-10-13 10:33:38,422  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8742"]
+#######prodlog#############-----2018-10-13 10:33:38,427  INFO StandardService:180 - Starting service [Tomcat]
+#######prodlog#############-----2018-10-13 10:33:38,427  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+#######prodlog#############-----2018-10-13 10:33:38,430  INFO AprLifecycleListener:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;d:\Program Files\Git\cmd;D:\Program Files\Java\jdk1.8.0_73\bin;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;.]
+#######prodlog#############-----2018-10-13 10:33:38,477  INFO [/]:180 - Initializing Spring embedded WebApplicationContext
+#######prodlog#############-----2018-10-13 10:33:38,477  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 860 ms
+#######prodlog#############-----2018-10-13 10:33:38,510  INFO ServletRegistrationBean:187 - Servlet dispatcherServlet mapped to [/]
+#######prodlog#############-----2018-10-13 10:33:38,513  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+#######prodlog#############-----2018-10-13 10:33:38,513  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+#######prodlog#############-----2018-10-13 10:33:38,513  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+#######prodlog#############-----2018-10-13 10:33:38,513  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+#######prodlog#############-----2018-10-13 10:33:38,584  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+#######prodlog#############-----2018-10-13 10:33:38,693  INFO RequestMappingHandlerAdapter:588 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68e5eea7: startup date [Sat Oct 13 10:33:37 CST 2018]; root of context hierarchy
+#######prodlog#############-----2018-10-13 10:33:38,728  INFO RequestMappingHandlerMapping:549 - Mapped "{[/hello]}" onto public java.lang.String com.sam.eurekaprofile.controller.HelloController.Hello()
+#######prodlog#############-----2018-10-13 10:33:38,731  INFO RequestMappingHandlerMapping:549 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+#######prodlog#############-----2018-10-13 10:33:38,732  INFO RequestMappingHandlerMapping:549 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+#######prodlog#############-----2018-10-13 10:33:38,746  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+#######prodlog#############-----2018-10-13 10:33:38,746  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+#######prodlog#############-----2018-10-13 10:33:38,820  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+#######prodlog#############-----2018-10-13 10:33:38,833  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8742"]
+#######prodlog#############-----2018-10-13 10:33:38,839  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+#######prodlog#############-----2018-10-13 10:33:38,847  INFO TomcatWebServer:206 - Tomcat started on port(s): 8742 (http) with context path ''
+#######prodlog#############-----2018-10-13 10:33:38,850  INFO EurekaProfileApplication:59 - Started EurekaProfileApplication in 1.682 seconds (JVM running for 2.199)
+#######prodlog#############-----2018-10-13 10:33:47,135  INFO [/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+#######prodlog#############-----2018-10-13 10:33:47,135  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+#######prodlog#############-----2018-10-13 10:33:47,148  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms

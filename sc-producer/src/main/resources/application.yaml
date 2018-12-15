@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/combdb?useSSL=false
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+ribbon:
+  eureka:
+    enabled: false
+
+
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  typeAliasesPackage: com.zy.entity

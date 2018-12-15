@@ -1,0 +1,35 @@
+package com.sam.orderfegin;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
+
+
+@SpringBootApplication
+@EnableEurekaClient
+@EnableFeignClients
+//实现在Spring Cloud中使用Hystrix组件：包括通过@HystrixCommand调用服务，实现fallback方法
+@EnableCircuitBreaker
+public class OrderFeginApplication {
+
+    /**
+     * 消费者
+     * fegin客户端调用
+     * @param args
+     */
+    public static void main(String[] args) {
+        SpringApplication.run(OrderFeginApplication.class, args);
+    }
+
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate(){
+        return new RestTemplate();
+    }
+
+}

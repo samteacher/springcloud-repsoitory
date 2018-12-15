@@ -1,0 +1,42 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringMVC5+Thymeleaf迭代器示例</title>
+</head>
+<body>
+<h2>Spring MVC5 + Thymeleaf迭代器示例</h2>
+<table>
+    <thead>
+    <tr>
+        <th>产品名称</th>
+        <th>价格</th>
+        <th>有效日期</th>
+    </tr>
+    </thead>
+    <tbody th:remove="all-but-first">
+    <tr th:each="product : ${productList}">
+        <td th:text="${productStat.count}">1</td>
+        <td th:text="${product.description}">Red chair</td>
+        <td th:text="${'￥' + #numbers.formatDecimal(product.price, 1, 2)}">￥350</td>
+        <td th:text="${#dates.format(product.availableFrom, 'dd-MM-yyyy')}">2018-02-20</td>
+    </tr>
+    <tr>
+        <td>White table</td>
+        <td>￥200</td>
+        <td>2018-04-10</td>
+    </tr>
+    <tr>
+        <td>Reb table</td>
+        <td>￥200</td>
+        <td>2018-02-20</td>
+    </tr>
+    <tr>
+        <td>Blue table</td>
+        <td>￥200</td>
+        <td>2018-02-20</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
