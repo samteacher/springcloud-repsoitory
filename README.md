@@ -1,6 +1,6 @@
 # springcloud
-springcloud完整实例项目
-chapter1-1-1：Spring Cloud构建微服务架构-服务注册与发现
+springcloud完整实例项目<br/>
+chapter1-1-1：Spring Cloud构建微服务架构-服务注册与发现<br/>
 chapter1-1-2：Spring Cloud构建微服务架构-高级服务注册与发现
 chapter1-1-3：Spring Cloud构建微服务架构-服务消费者
 chapter1-1-4：Spring Cloud构建微服务架构-断路器
