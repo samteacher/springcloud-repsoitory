@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.stereotype.Component;
 
 import com.netflix.zuul.ZuulFilter;
@@ -16,7 +17,7 @@ import com.netflix.zuul.context.RequestContext;
 @Component
 public class MyFilter extends ZuulFilter {
 
-    private static Logger log = LoggerFactory.getLogger(MyFilter.class);
+    private static Logger logger = LoggerFactory.getLogger(MyFilter.class);
 
     @Override
     public String filterType() {
@@ -37,14 +38,14 @@ public class MyFilter extends ZuulFilter {
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
-        log.info(String.format("%s >>> %s", request.getMethod(), request.getRequestURL().toString()));
+        logger.info(String.format("%s >>> %s", request.getMethod(), request.getRequestURL().toString()));
         Object accessToken = request.getParameter("token");
         String refer = request.getHeader("refer");
         if (accessToken != null) {
             //表示继续往下执行
             return null;
         }
-        log.warn("token is empty");
+        logger.warn("token is empty");
         ctx.setSendZuulResponse(false);
         ctx.setResponseStatusCode(401);
         try {

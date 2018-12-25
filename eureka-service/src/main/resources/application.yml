@@ -4,12 +4,12 @@ eureka:
   instance:
     hostname: localhost
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: false   # 表示是否注册自身到eureka服务器，因为当前这个应用就是eureka服务器，没必要注册自身，所以这里是false。
+    fetchRegistry: false         # 表示是否从eureka服务器获取注册信息，  同上，这里不需要。
   server:
-    enable-self-preservation: true #在调试时关闭eureka注册中心的保护机制
+    enable-self-preservation: true # 在调试时关闭eureka注册中心的保护机制
+    eviction-interval-timer-in-ms: 600000  # 该配置可以修改检查失效服务的时间，每隔10s检查失效服务，并移除列表 (Spring Cloud默认该配置是 60s)
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  #registerWithEureka   表示是否注册自身到eureka服务器，因为当前这个应用就是eureka服务器，没必要注册自身，所以这里是false。
-  #fetchRegistry        表示是否从eureka服务器获取注册信息，  同上，这里不需要。
-  #defaultZone          就比较重要了，是设置eureka服务器所在的地址，查询服务和注册服务都需要依赖这个地址。
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  # 就比较重要了，是设置eureka服务器所在的地址，查询服务和注册服务都需要依赖这个地址。
+
+

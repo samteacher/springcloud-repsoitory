@@ -1,7 +1,15 @@
 eureka:
+  eureka:
+    instance:
+      # 每隔10s发送一次心跳
+      lease-renewal-interval-in-seconds: 10
+      # 告知服务端30秒还未收到心跳的话，就将该服务移除列表
+      lease-expiration-duration-in-seconds: 30
   client:
     serviceUrl:
       defaultZone: http://localhost:8888/eureka/
+    # 定时的向Eureka服务中心确认，刷新自己的可用的服务列表，修改为5s
+    registry-fetch-interval-seconds: 5
 server:
   port: 8762
 spring:
