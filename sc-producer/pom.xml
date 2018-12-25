@@ -9,6 +9,7 @@
         <version>1.5.18.RELEASE</version>
     </parent>
 
+
     <groupId>org.apache.servicecomb.sample</groupId>
     <artifactId>spring-boot-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
