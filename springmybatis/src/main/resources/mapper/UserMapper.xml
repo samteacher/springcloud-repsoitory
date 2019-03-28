@@ -3,25 +3,25 @@
 <mapper namespace="com.sam.springmybatis.dao.UserMapper">
 
 
-    <select id="selectUser" resultType="com.sam.springmybatis.entity.User" parameterType="java.lang.String" >
+    <select id="selectUser" resultType="com.sam.springmybatis.entity.User" parameterType="java.lang.String">
         SELECT
             username,
             age,
             account,
             address
         FROM
-            USER
+            user
         WHERE
             job = #{job}
     </select>
 
-    <select id="queryUserAll" resultType="com.sam.springmybatis.entity.User" >
+    <select id="queryUserAll" resultType="com.sam.springmybatis.entity.User">
         SELECT
             username,
             age,
             account,
             address
         FROM
-            USER
+            user
     </select>
 </mapper>
