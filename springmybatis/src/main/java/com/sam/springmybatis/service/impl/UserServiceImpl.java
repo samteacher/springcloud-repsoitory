@@ -1,7 +1,6 @@
 package com.sam.springmybatis.service.impl;
 
 import com.sam.springmybatis.dao.UserMapper;
-import com.sam.springmybatis.entity.AdminUser;
 import com.sam.springmybatis.entity.User;
 import com.sam.springmybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

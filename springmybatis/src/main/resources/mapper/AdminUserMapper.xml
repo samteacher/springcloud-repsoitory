@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sam.springmybatis.dao.AdminUserMapper" >
 
-	<select id="queryAdminUserAll"  resultType="AdminUser">
+	<select id="queryAdminUserAll"  resultType="com.sam.springmybatis.entity.AdminUser">
 		SELECT
 			id,
 			email,
