@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sam.excel.dao.MembershipUserInfoMapper">
+    <resultMap id="BaseResultMap" type="com.sam.excel.entity.Membership_user_info">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="channel" jdbcType="VARCHAR" property="channel"/>
+        <result column="city" jdbcType="VARCHAR" property="city"/>
+        <result column="member_number" jdbcType="VARCHAR" property="memberNumber"/>
+        <result column="belonging_stores" jdbcType="VARCHAR" property="belongingStores"/>
+    </resultMap>
+
+    <select id="saveExcel" resultMap="BaseResultMap">
+        SELECT id,channel,city,member_number,belonging_stores FROM membership_user_info
+    </select>
+
+</mapper>
