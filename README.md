@@ -2,7 +2,7 @@
                            
 ![avatar](https://www.2cto.com/uploadfile/Collfiles/20180423/201804230933451.jpg)
 
-<div style="line-height:25px">
+<div style="line-height:25px;fint-size:14px;">
   <ul>
     <li>chapter1-1-1：Spring Cloud构建微服务架构-服务注册与发现</li>
     <li>chapter1-1-2：Spring Cloud构建微服务架构-高级服务注册与发现</li>
