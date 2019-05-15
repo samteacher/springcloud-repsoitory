@@ -1,5 +1,7 @@
 <h4 style="font-family:"微软雅黑";>springcloud完整实例项目</h4><br/>
-<p>![image](https://www.2cto.com/uploadfile/Collfiles/20180423/201804230933451.jpg)</p>                        
+                           
+![avatar](https://www.2cto.com/uploadfile/Collfiles/20180423/201804230933451.jpg)
+
 <div style="line-height:25px">
   <ul>
     <li>chapter1-1-1：Spring Cloud构建微服务架构-服务注册与发现</li>
