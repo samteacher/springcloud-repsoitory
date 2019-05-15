@@ -1,8 +1,14 @@
+<style type="text/css">
+        ::selection { background:#ff9632; color: #000;color:#fff; } 
+        ::-moz-selection { background:#ff9632;color: #000; color:#fff;} /*火狐浏览器*/
+        ::-webkit-selection { background:#ff9632; color: #000; color:#fff;} /*谷歌*/
+</style>
+
 <h4 style="font-family:"微软雅黑";>springcloud完整实例项目</h4><br/>
                            
 ![avatar](https://www.2cto.com/uploadfile/Collfiles/20180423/201804230933451.jpg)
 
-<div style="line-height:25px;fint-size:14px;">
+<div style="line-height:25px;font-size:14px;:select">
   <ul>
     <li>chapter1-1-1：Spring Cloud构建微服务架构-服务注册与发现</li>
     <li>chapter1-1-2：Spring Cloud构建微服务架构-高级服务注册与发现</li>
