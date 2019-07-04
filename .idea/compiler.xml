@@ -7,10 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
+        <module name="eureka-memuber" />
+        <module name="eureka-order" />
+        <module name="eureka-profile" />
+        <module name="eureka-properties" />
+        <module name="eureka-service" />
+        <module name="service-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="1.8" />
+      <module name="eureka-memuber" target="1.8" />
+      <module name="eureka-order" target="1.8" />
+      <module name="eureka-profile" target="1.8" />
+      <module name="eureka-properties" target="1.8" />
+      <module name="eureka-service" target="1.8" />
+      <module name="service-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
